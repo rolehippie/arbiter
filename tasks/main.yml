@@ -1,0 +1,74 @@
+# Standards: 0.1
+---
+- name: Create required dirs
+  loop:
+    - /etc/mongodb
+  file:
+    path: "{{ item }}"
+    state: directory
+  tags:
+    - arbiter
+
+- name: Create init dirs
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  file:
+    path: "/etc/mongodb/{{ item.name }}"
+    state: directory
+  tags:
+    - arbiter
+
+- name: Write init script
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  notify:
+    - Restart arbiter
+  template:
+    src: init.j2
+    dest: "/etc/mongodb/{{ item.name }}/init.sh"
+  tags:
+    - arbiter
+
+- name: Write keyfile content
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  notify:
+    - Restart arbiter
+  copy:
+    content: "{{ item.keyfile }}"
+    dest: "/etc/mongodb/{{ item.name }}.key"
+    owner: "{{ item.owner | default('999') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: u=rw,g=,o=
+  tags:
+    - arbiter
+
+- name: Write service file
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  notify:
+    - Restart arbiter
+  template:
+    src: service.j2
+    dest: "/etc/systemd/system/arbiter-{{ item.name }}.service"
+  tags:
+    - arbiter
+
+- name: Start arbiter service
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  systemd:
+    name: "arbiter-{{ item.name }}"
+    state: started
+    daemon_reload: True
+    masked: False
+    enabled: True
+  tags:
+    - arbiter
+
+...

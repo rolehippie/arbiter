@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+mongo \
+	-u {{ item.username }} \
+	-p {{ item.password }} \
+	--authenticationDatabase admin \
+	--eval 'db.adminCommand( { setFeatureCompatibilityVersion: "{{ item.compat_version | default(item.version) }}" } )'
