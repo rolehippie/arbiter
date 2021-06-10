@@ -1,6 +1,6 @@
 # arbiter
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/arbiter) [![Build Status](https://img.shields.io/drone/build/rolehippie/arbiter/master?logo=drone)](https://cloud.drone.io/rolehippie/arbiter) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/arbiter)](https://github.com/rolehippie/arbiter/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/arbiter) [![Testing Build](https://github.com/rolehippie/arbiter/workflows/testing/badge.svg)](https://github.com/rolehippie/arbiter/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/arbiter/workflows/readme/badge.svg)](https://github.com/rolehippie/arbiter/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/arbiter/workflows/galaxy/badge.svg)](https://github.com/rolehippie/arbiter/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/arbiter)](https://github.com/rolehippie/arbiter/blob/master/LICENSE) 
 
 Ansible role to install and configure an MongoDB cluster arbiter. 
 
