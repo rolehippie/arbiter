@@ -5,6 +5,9 @@
     - /etc/mongodb
   file:
     path: "{{ item }}"
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
     state: directory
   tags:
     - arbiter
@@ -15,6 +18,9 @@
     label: "{{ item.name }}"
   file:
     path: "/etc/mongodb/{{ item.name }}"
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
     state: directory
   tags:
     - arbiter
@@ -28,6 +34,9 @@
   template:
     src: init.j2
     dest: "/etc/mongodb/{{ item.name }}/init.sh"
+    owner: root
+    group: root
+    mode: u=rwx,g=,o=
   tags:
     - arbiter
 
@@ -55,6 +64,9 @@
   template:
     src: service.j2
     dest: "/etc/systemd/system/arbiter-{{ item.name }}.service"
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - arbiter
 
