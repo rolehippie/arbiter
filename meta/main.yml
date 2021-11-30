@@ -20,6 +20,8 @@
 # [rolehippie.docker](https://github.com/rolehippie/docker)
 # @end
 galaxy_info:
+  role_name: arbiter
+  namespace: rolehippie
   author: Thomas Boerger
   description: Ansible role to install and configure an MongoDB cluster arbiter
   license: Apache-2.0
