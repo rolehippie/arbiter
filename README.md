@@ -37,6 +37,7 @@ arbiter_instances: []
 arbiter_instances:
   - name: foobar
     version: 4.0
+    pull: True
     publish: 27017
     replset: rs0
     owner: 999

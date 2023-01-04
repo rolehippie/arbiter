@@ -70,6 +70,18 @@
   tags:
     - arbiter
 
+- name: Pull docker image
+  loop: "{{ arbiter_instances }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when:
+    - item.pull | default(True)
+  docker_image:
+    name: "mongo:{{ item.version }}"
+    source: pull
+  tags:
+    - arbiter
+
 - name: Start arbiter service
   loop: "{{ arbiter_instances }}"
   loop_control:
