@@ -81,6 +81,7 @@ arbiter_instances:
 ## Dependencies
 
 - [rolehippie.docker](https://github.com/rolehippie/docker)
+- [community.docker](https://github.com/ansible-collections/community.docker)
 
 ## License
 
