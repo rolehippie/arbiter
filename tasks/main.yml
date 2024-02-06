@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Create required dirs
   loop:
     - /etc/mongodb
-  file:
+  ansible.builtin.file:
     path: "{{ item }}"
     owner: root
     group: root
@@ -16,7 +15,7 @@
   loop: "{{ arbiter_instances }}"
   loop_control:
     label: "{{ item.name }}"
-  file:
+  ansible.builtin.file:
     path: "/etc/mongodb/{{ item.name }}"
     owner: root
     group: root
@@ -31,7 +30,7 @@
     label: "{{ item.name }}"
   notify:
     - Restart arbiter
-  template:
+  ansible.builtin.template:
     src: init.j2
     dest: "/etc/mongodb/{{ item.name }}/init.sh"
     owner: root
@@ -46,7 +45,7 @@
     label: "{{ item.name }}"
   notify:
     - Restart arbiter
-  copy:
+  ansible.builtin.copy:
     content: "{{ item.keyfile }}"
     dest: "/etc/mongodb/{{ item.name }}.key"
     owner: "{{ item.owner | default('999') }}"
@@ -61,7 +60,7 @@
     label: "{{ item.name }}"
   notify:
     - Restart arbiter
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: "/etc/systemd/system/arbiter-{{ item.name }}.service"
     owner: root
@@ -76,7 +75,7 @@
     label: "{{ item.name }}"
   when:
     - item.pull | default(True)
-  docker_image:
+  community.docker.docker_image:
     name: "mongo:{{ item.version }}"
     source: pull
   tags:
@@ -86,7 +85,7 @@
   loop: "{{ arbiter_instances }}"
   loop_control:
     label: "{{ item.name }}"
-  systemd:
+  ansible.builtin.systemd:
     name: "arbiter-{{ item.name }}"
     state: started
     daemon_reload: True
