@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/arbiter/compare/v1.1.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([cee6b75](https://github.com/rolehippie/arbiter/commit/cee6b75b22f1170358adfb52a88073622a962570))
+* used full qualified collection names ([69958d3](https://github.com/rolehippie/arbiter/commit/69958d34cd72a75ccb49eba21a9dbad8667d2482))
+
+
+### Bugfixes
+
+* remove meta requirements and document used collections ([bcbe4e4](https://github.com/rolehippie/arbiter/commit/bcbe4e4d7e68e3158fa0b3ef06da699b6bb97acc))
+
 ## [1.1.0](https://github.com/rolehippie/arbiter/compare/v1.0.0...v1.1.0) (2023-01-04)
 
 
