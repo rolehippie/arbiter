@@ -1,4 +1,4 @@
-# arbiter
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/arbiter)
 [![General Workflow](https://github.com/rolehippie/arbiter/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/arbiter/actions/workflows/general.yml)
@@ -76,7 +76,6 @@ arbiter_instances:
 ## Discovered Tags
 
 **_arbiter_**
-
 
 ## Dependencies
 
