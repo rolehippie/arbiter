@@ -74,7 +74,7 @@
   loop_control:
     label: "{{ item.name }}"
   when:
-    - item.pull | default(True)
+    - true if item.pull is not defined else item.pull
   community.docker.docker_image:
     name: "mongo:{{ item.version }}"
     source: pull
@@ -88,9 +88,9 @@
   ansible.builtin.systemd:
     name: "arbiter-{{ item.name }}"
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
   tags:
     - arbiter
 

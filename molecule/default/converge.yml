@@ -5,7 +5,7 @@
     arbiter_instances:
       - name: dummy
         version: 4.0
-        pull: True
+        pull: true
         publish: 27017
         replset: rs0
         owner: 999

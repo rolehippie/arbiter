@@ -6,6 +6,6 @@
   ansible.builtin.systemd:
     name: "arbiter-{{ item.name }}"
     state: restarted
-    daemon_reload: True
+    daemon_reload: true
 
 ...

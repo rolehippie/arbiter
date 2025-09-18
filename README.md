@@ -1,4 +1,4 @@
-# workspace
+# arbiter
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/arbiter)
 [![General Workflow](https://github.com/rolehippie/arbiter/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/arbiter/actions/workflows/general.yml)
@@ -47,7 +47,7 @@ arbiter_instances: []
 arbiter_instances:
   - name: foobar
     version: 4.0
-    pull: True
+    pull: true
     publish: 27017
     replset: rs0
     owner: 999
