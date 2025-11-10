@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/arbiter/compare/v2.1.0...v3.0.0) (2025-11-10)
+
+
+### Features
+
+* **major:** update dependency community.docker to v5 ([#33](https://github.com/rolehippie/arbiter/issues/33)) ([cbc4e8e](https://github.com/rolehippie/arbiter/commit/cbc4e8e0ddb72a85020dcaffc9a029504073892b))
+
 ## [2.1.0](https://github.com/rolehippie/arbiter/compare/v2.0.0...v2.1.0) (2025-09-18)
 
 
