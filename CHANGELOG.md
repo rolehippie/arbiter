@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.2.0](https://github.com/rolehippie/arbiter/compare/v3.1.0...v3.2.0) (2026-04-13)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.2.0,<5.3.0 ([#45](https://github.com/rolehippie/arbiter/issues/45)) ([eef3c13](https://github.com/rolehippie/arbiter/commit/eef3c135d61b323d48f08d95eee44b1418ee8c9b))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([0206609](https://github.com/rolehippie/arbiter/commit/0206609bb540a8acadc1b493b507f3225ce20141))
+* **flake:** updated lockfile [skip ci] ([31a06e7](https://github.com/rolehippie/arbiter/commit/31a06e75f80c5c0f2ee171836e72a2b8334cc8ef))
+
 ## [3.1.0](https://github.com/rolehippie/arbiter/compare/v3.0.0...v3.1.0) (2026-03-30)
 
 ### Dependencies
