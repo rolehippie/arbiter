@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.0](https://github.com/rolehippie/arbiter/compare/v3.3.0...v3.4.0) (2026-08-10)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#52](https://github.com/rolehippie/arbiter/issues/52)) ([f5fc287](https://github.com/rolehippie/arbiter/commit/f5fc287e338b9dc75360ce22fafd0691d5dfed96))
+* **patch:** update dependency python to v3.14.7 ([#50](https://github.com/rolehippie/arbiter/issues/50)) ([614c8a8](https://github.com/rolehippie/arbiter/commit/614c8a8918ca3ba6f985b7a5682ba9990540460e))
+
 ## [3.3.0](https://github.com/rolehippie/arbiter/compare/v3.2.0...v3.3.0) (2026-07-27)
 
 ## [3.2.0](https://github.com/rolehippie/arbiter/compare/v3.1.0...v3.2.0) (2026-04-13)
