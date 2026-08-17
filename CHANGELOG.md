@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.5.0](https://github.com/rolehippie/arbiter/compare/v3.4.0...v3.5.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#55](https://github.com/rolehippie/arbiter/issues/55)) ([05e566e](https://github.com/rolehippie/arbiter/commit/05e566efa9f32e616640d18fdbcf84fdfe9eafc6))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#53](https://github.com/rolehippie/arbiter/issues/53)) ([1bdeccd](https://github.com/rolehippie/arbiter/commit/1bdeccdbc326deaf25a033f30e97540753a997d6))
+* **patch:** update dependency pre-commit to v4.6.2 ([#54](https://github.com/rolehippie/arbiter/issues/54)) ([51efea5](https://github.com/rolehippie/arbiter/commit/51efea5955e7c5f0d0c8cc865373dbbab857081c))
+
 ## [3.4.0](https://github.com/rolehippie/arbiter/compare/v3.3.0...v3.4.0) (2026-08-10)
 
 ### Dependencies
