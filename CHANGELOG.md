@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.6.0](https://github.com/rolehippie/arbiter/compare/v3.5.0...v3.6.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#56](https://github.com/rolehippie/arbiter/issues/56)) ([958aaaf](https://github.com/rolehippie/arbiter/commit/958aaaf94c317339fa8734cd7be4ac11fe033576))
+
 ## [3.5.0](https://github.com/rolehippie/arbiter/compare/v3.4.0...v3.5.0) (2026-08-17)
 
 ### Dependencies
