@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.7.0](https://github.com/rolehippie/arbiter/compare/v3.6.1...v3.7.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([8743219](https://github.com/rolehippie/arbiter/commit/87432191428e14dc8ca8e41ee948e7c00373a614))
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.3.0,<5.4.0 ([#58](https://github.com/rolehippie/arbiter/issues/58)) ([85770aa](https://github.com/rolehippie/arbiter/commit/85770aaf7a88499cffc6d588218675964b659307))
+
 ## [3.6.1](https://github.com/rolehippie/arbiter/compare/v3.6.0...v3.6.1) (2026-08-31)
 
 ### Dependencies
