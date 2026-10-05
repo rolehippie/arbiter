@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.8.0](https://github.com/rolehippie/arbiter/compare/v3.7.0...v3.8.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.4.0,<5.5.0 ([#66](https://github.com/rolehippie/arbiter/issues/66)) ([3306c4e](https://github.com/rolehippie/arbiter/commit/3306c4e29bf370ffa49c07147276a1d0ef47d4c3))
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#59](https://github.com/rolehippie/arbiter/issues/59)) ([5d21b69](https://github.com/rolehippie/arbiter/commit/5d21b699de92a306a12804b96824620d94a3cfcd))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#61](https://github.com/rolehippie/arbiter/issues/61)) ([e437213](https://github.com/rolehippie/arbiter/commit/e43721303fe580eadb82aa01f1d5be6883696867))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#62](https://github.com/rolehippie/arbiter/issues/62)) ([1a1bd8e](https://github.com/rolehippie/arbiter/commit/1a1bd8ea1b564ed423519ca9209f7f2a5dd64498))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#63](https://github.com/rolehippie/arbiter/issues/63)) ([9819ff2](https://github.com/rolehippie/arbiter/commit/9819ff26c0f5a210ada003538a141ac3462eeea9))
+* **mise:** update dependency prek to v0.5.3 ([#60](https://github.com/rolehippie/arbiter/issues/60)) ([8e864db](https://github.com/rolehippie/arbiter/commit/8e864dbb392bbc682a413e488e950fbce218a6d6))
+* **mise:** update dependency prek to v0.5.4 ([#64](https://github.com/rolehippie/arbiter/issues/64)) ([c974461](https://github.com/rolehippie/arbiter/commit/c9744617d2f749e381f0161b59e719558c60dec8))
+* **mise:** update dependency prek to v0.5.5 ([#67](https://github.com/rolehippie/arbiter/issues/67)) ([c1e19fc](https://github.com/rolehippie/arbiter/commit/c1e19fc36b976c2b44d8339e9c32e8bbc338e1c1))
+
 ## [3.7.0](https://github.com/rolehippie/arbiter/compare/v3.6.1...v3.7.0) (2026-09-07)
 
 ### Features
